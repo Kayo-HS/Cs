@@ -1,22 +1,7 @@
-﻿int[] arrayInteiros = new int[3];
+﻿using ExemploExplorando.Models;
 
-arrayInteiros[0] = 72;
-arrayInteiros[1] = 64;
-arrayInteiros[2] = 50;
+Pessoa p1 = new Pessoa();
 
-Console.WriteLine("Percorrendo o Array com o FOR");
-
-for (int contador = 0; contador < arrayInteiros.Length; contador++)
-{
-    Console.WriteLine($"Posição N° {contador} - {arrayInteiros[contador]}");
-}
-
-
-Console.WriteLine("Percorrendo o Array com FOREACH");
-
-int contadorForeach = 0;
-foreach (int valor in arrayInteiros)
-{
-    Console.WriteLine($"Possição N° {contadorForeach} - {valor}");
-    contadorForeach++;
-}
+p1.Nome = "Kayo";
+p1.Idade = 20;
+p1.apresentar();
