@@ -7,6 +7,15 @@ namespace ExemploExplorando.Models
 {
     public class Pessoa
     {
+        public Pessoa()
+        {
+            
+        }
+        public Pessoa(string nome, string sobrenome)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+        }
 
         private string _nome;
         private int _idade;
@@ -42,8 +51,8 @@ namespace ExemploExplorando.Models
                 _idade = value;
             }
         }
-
-        public void apresentar()
+        //virtual diz que o metodo pode ser mudado pelo Polimorfismo
+        public virtual void apresentar()
         {
             Console.WriteLine($"Nome: {NomeCompleto}, Idade: {Idade}");
         }
