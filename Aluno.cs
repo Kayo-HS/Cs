@@ -8,7 +8,7 @@ namespace ExemploExplorando.Models
     public class Aluno : Pessoa
     {
         public double Nota { get; set; }
-        public int Faltas {}
+        public int Faltas {get; set; }
 
         public override void apresentar()
         {
